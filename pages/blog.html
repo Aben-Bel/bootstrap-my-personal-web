@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="shortcut icon" type="image/png" href="./assest/image/favicon.ico" />
+    <link rel="stylesheet" href="./assest/css/main.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="body">
+        <div class="hide">
+            <a href="./index.html">
+                <img width="200px" src="./assest/image/logo.png">
+            </a>
+                <span id="side" class="material-icons right side-button">
+                    view_headline
+                    </span>
+                    <span id="side1" class="material-icons right hide-icon side-button">
+                        clear
+                        </span>
+        </div>
+        <div class="sidebar">
+            <div>
+                <a href="./index.html">
+                    <img width="100%" src="./assest/image/logo.png">
+                </a>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="index.html" >Overview</a></li>
+                    <li><a href="/pages/lifestyle.html">lifestyle</a></li>
+                    <li><a href="/pages/sport.html"  >sport</a></li>
+                    <li><a href="/pages/projects.html" >projects</a></li>
+                    <li><a href="/pages/blog.html" text="orange">blog</a></li>
+                    <li><a href="/pages/aboutme.html">About Me</a></li>
+                    <li><a href="/pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="foot">
+                <p class="w-100">Copyright © Abenezer Sleshi</p>
+                    <a  href="https://twitter.com/abenezer_sle">
+                        <img src="./assest/image/twitter.png"
+                            alt="link to twitter account" width="25" height="15">
+                    </a>
+                    <a href="https://www.linkedin.com/in/abenezer-b-574246129/">
+                        <img src="./assest/image/linkden.png"
+                            alt="link to linkden account" width="25" height="15">
+                    </a>
+                    <a href="https://www.instagram.com/aben_sle/">
+                        <img src="./assest/image/instagram.png"
+                            alt="link to instagram account" width="25" height="15">
+                    </a>
+                    <a href="https://github.com/Aben-Bel">
+                        <img src="./assest/image/github.png"
+                            alt="link to github account" width="25" height="15">
+                    </a>
+            </div>
+        </div>
+        <div class="content">
+            <main class="blog">
+                <article>
+                    <h2>Using Relative sizes in web design</h2>
+        
+                    <section>
+                        <h4>Units</h4>
+                        <p>
+                            These days web development must cover devices with different screen size. Poeple come to the web
+                            to get information on a variety of topics. They want a comfortable site that can serve them content
+                            on tablets, phones or desktops. If they find sites unwelcoming, they will not wait another second to
+                            try another website that meets their needs. Relative units in web design is a step forward in
+                            satisfying
+                            user.
+                        </p>
+        
+                        <p>
+                            In web development, elements and fonts have sizes in pixel. Pixels are collections of grid boxes for
+                            a monitor to
+                            render content. Each pixel value in the grid have color like an rgb value to display colorful
+                            content.
+                            This pixel value could be relative or absolute. Absolute values are values that occupy the same
+                            amount of pixel size
+                            in different computers. While, relative units are, like their name, relative to some value. Meaning,
+                            the pixel value
+                            of an element or font can differ from computer to computer according to resolution and viewport
+                            size.
+                            The most common relative units are em, rem, and percent.
+                        </p>
+        
+                        <h4>Percent</h4>
+                        <p>
+                            Percent units are still to be calculated pixel values. It is relative to the width of an html
+                            element.
+                            For example, a p element with 10% width inside a div with width size 500px, will have a width size
+                            of
+                            50px (calculated from 10% of 500px). In this example, p html tag's width is relative to its parent's
+                            width.
+                        </p>
+        
+                        <h4>rem and em</h4>
+                        <p>
+                            rem and em like percent are to be calculated pixel values relative to font size of some element. rem
+                            is
+                            relative to html element's font size. For example, html's default font size is 16px, therefore, 2rem
+                            units
+                            would mean 2 time 16px units which is 32px. Em unit is relative to its direct parent element's font
+                            size.
+                            Meaning, a p tag with 2.5em inside a div with font size 20px would have a value of 2.5 times 20px
+                            which is 50px.
+                        </p>
+        
+                        <h4>Does it matter to use relative sizes</h4>
+        
+                        <p>
+                            Short answer: yes. Using relative units will make user's experience more fulfulling. When users
+                            zoom, they
+                            increase font-size of the browser's root element, in doing so, increase all element's with rem
+                            units. Meaning,
+                            visually impaired users, can have a more accessible website. When a user might change their devices
+                            orientation,
+                            accordingly, users expect content to adjust to the new screen orientation and size changes to make
+                            the content more
+                            pleasent to consume. For example, when a user switches from portrait view to landscape view, they
+                            expect
+                            the content to be more spreaded. Responsive wise, websites these days are not only run on desktops
+                            but rather on
+                            mobile phones. With this, website designers are expected to make mobile device usage as comfortable
+                            as desktop usage.
+                            Users should not have difficulty interacting with the website.
+                        </p>
+        
+                        <p>There are a few links I would suggest that helped me grasp these concepts. Check <a class="highlight" href="https://webdesign.tutsplus.com/tutorials/comprehensive-guide-when-to-use-em-vs-rem--cms-23984">EM vs REM</a> and <a class="highlight" href="https://alistapart.com/article/responsive-web-design/">Responsive Design</a> </p>
+                    </section>
+        
+                    <p class="date">March 19, 2020</p>
+                    <hr>
+                </article>
+        
+                <article>
+                    <h2>Pixels in browser</h2>
+        
+                    <section>
+                        <h4>What are pixels first?</h4>
+        
+                        <p>
+                            Pixels are just squares filled with color in a grid. Every computer got a resolution, how many
+                            pixels are piled horizontally and vertically.
+                            For example, a computer with 2560x1600 resolution have a 2560 columns with 1600 rows of pixels. Each
+                            pixel dimension is eqaul to resolution
+                            divided by physical screen size. A 13-inch laptop is 11.3 inches wide, and 6.4 inches long.
+                            Therefore, with resolution 2560x1600, a single pixel
+                            will have 11.3/2560 (0.004 inches) width with 6.4/1600 (0.004 inches) height. Each pixel has an rgb
+                            value. Like wise, a browser will cover less than
+                            or equal to computer resolution according to browsers size (expanded and otherwise).
+                        </p>
+        
+                        <h4>Understanding pixels in browser</h4>
+        
+                        <p>
+                            Pixels are the same everywhere whether in browser or not. But according to the browsers window size,
+                            a browser can cover different pixel value width and
+                            height wise. For example, a browser with window size half the monitor size, will have half pixel
+                            value compared to monitor pixel value. Like, for a computer
+                            with 2560x1600 resolution, a half wide browser window, will cover 1280px (2560/2), essentially
+                            making the browsers width 1280px. A 250px wide div tag
+                            covers exactly 250px in the browsers viewport. One must be careful, therefore, when using pixel
+                            values. Imagine, for instance, you have a 300px wide div.
+                            This div element in higher resolution looks smaller in size than lower resolutoin. Because pixel
+                            size is equal to physical screen size divided by resolution (screen size/resoultion),
+                            the higher the resolution, the smaller the pixel's size. But things are not that simple when it comes 
+                            to pixel calculation in browser. Visit <a class="highlight" href="https://johnresig.com/blog/sub-pixel-problems-in-css/">here</a> for 
+                            different ways browsers round up calculations.
+                        </p>
+        
+                    </section>
+        
+                    <p class="date">March 15, 2020</p>
+                    <hr>
+                </article>
+        
+                <article>
+                    <h2>What's new in CSS3?</h2>
+        
+                    <section>
+                        <h4>What is CSS3</h4>
+        
+                        <p>
+                            CSS3 is the latest version of Cascading Style Sheets langauge that extended CSS2.1. It is added new
+                            features like
+                            new layouts like multi-columns, flexible box or grid layouts, transistions or animations, gradients,
+                            shadows and more.
+                        </p>
+        
+                        <h4>What's new?</h4>
+                        <h5>CSS3 Selectors</h5>
+                        <p>
+                            In css, selectors are a way to identify an element to style. Almost everything in css is done
+                            through selections.
+                            Before one makes style changes, one must select an element to style.
+                        </p>
+        
+                        <p>
+                            Select any element whose attribute starts with some value. For example, <span
+                                class="highlight">someElement[attr^=value]</span> will pick
+                            'someElement' with 'attr' attribute with value 'someValue'
+                        </p>
+                        <p>
+                             Select any element whose attribute ends with some value. For example, <span
+                                class="highlight">someElement[attr$=value]</span> will pick
+                            'someElement' with 'attr' attribute with value 'someValue'
+        
+                        </p>
+        
+                        <p> Select any element whose attribute contain some value. For example, <span
+                                class="highlight">someElement[attr*=value]</span> will pick
+                            'someElement' with 'attr' attribute containing value 'someValue'
+                        </p>
+        
+                        <p>
+                             More pseudo-classes were added in css3. These are state indicators of an element. The added
+                            pseudo-classes are
+                            <span class="highlight">root, :last-child, :target, and :not</span>:. <span
+                                class="highlight">:root</span> allows to point to the root element of a document.
+                            <span class="highlight">:last-child</span> is a
+                            complement of the <span class="highlight">:first-child</span>; it selects the last element of a
+                            named parent element. <span class="highlight">:target</span>
+                            allows designer to draw
+                            user's attentoin to currently selected element. <span class="highlight">:not</span> is serves to select element that has not some
+                            property applied to it.
+                        </p>
+        
+                        <h5>CSS3 Colors</h5>
+        
+                        <p>CSS3 provides us with other options to set color like RGBA, HSL, HSLA. RGBA is the same as RGB expcept it has additional value, alpha, that sets
+                            the opacity level of an element. HSL(Hue, Saturation, Lightness) is used to manipulate the saturation or brightness of a color. HSLA is similar 
+                            with HSL except it has oppacity feature like RGBA. 
+                        </p>
+        
+                        <h5>Rounded Corners</h5>
+        
+                        <p>
+                            CSS3 offers a border-radius property that helps you create a curved/round border around an element. 
+                        </p>
+        
+                        <h5>Drop Shadows</h5>
+        
+                        <p>
+                            Now, one can add drop shadows to elemetns using box-shadow property. For example, <span class="highlight">box-shadow: 0 0 1px 3px rgb(128, 128, 128); </span>
+                        </p>
+        
+                        <h5>
+                            Text Shadow
+                        </h5>
+        
+                        <p>
+                            CSS3 provides a way to apply shadow to individual characters in a text. For example, <span class="highlight"> text-shadow : 1px 1px 0 0 2px green</span>
+                        </p>
+        
+                        <h5>Linear Gradients</h5>
+        
+                        <p>
+                            One can create a linear gradient at any angle with multiple colors using <span class="highlight">linear-gradient(direction, color, stop,..., color, stop )</span>. 
+                        </p>
+        
+                        <h5>Radical Gradients</h5>
+        
+                        <p>These are similar to linear gradient with only one difference. The gradient is applied a circlular manner than linear.</p>
+        
+                        <h5>Multiple Background</h5>
+        
+                        <p>In CSS3, one can set multiple background either with images or different gradient.  </p>
+        
+                        <h4>More on CSS3</h4>
+                        <p>The ones discussed above are the implemented once. Visit <a class="highlight" href="https://developer.mozilla.org/en-US/docs/Archive/CSS3">here</a> for implemented and unimplemented features in CSS3.  </p>
+                    </section>
+        
+                    <p class="date">March 20, 2020</p>
+                    <hr>
+                </article>
+            </main>
+            
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+        <script src="./assest/script/main.js"></script>
+
+</body>
+
+</html>
